@@ -3425,6 +3425,397 @@ img {
     pointer-events: none;
 }
 
+/* Location Cards */
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.location-card {
+    background: var(--primary-white);
+    border-radius: 16px;
+    box-shadow: var(--shadow-medium);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(139, 175, 139, 0.1);
+}
+
+.location-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-large);
+}
+
+.location-header {
+    background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+    color: var(--primary-white);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.location-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--primary-white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.location-content {
+    padding: 2rem;
+}
+
+.location-info h4 {
+    color: var(--primary-green);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.location-info p {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.location-info address {
+    font-style: normal;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.contact-details {
+    margin-bottom: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(139, 175, 139, 0.05);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-item:hover {
+    background: rgba(139, 175, 139, 0.1);
+}
+
+.contact-icon {
+    color: var(--primary-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.contact-item h5 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contact-item p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.opening-hours {
+    background: rgba(166, 123, 91, 0.05);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.opening-hours h5 {
+    color: var(--primary-brown);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(166, 123, 91, 0.1);
+}
+
+.hours-row:last-child {
+    border-bottom: none;
+}
+
+.hours-row.closed span:last-child {
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.location-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.location-actions .btn {
+    flex: 1;
+    min-width: 120px;
+}
+
+/* Maps Section */
+.maps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.map-card {
+    background: var(--primary-white);
+    border-radius: 16px;
+    box-shadow: var(--shadow-medium);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-large);
+}
+
+.map-card h3 {
+    background: linear-gradient(135deg, var(--primary-brown), var(--dark-brown));
+    color: var(--primary-white);
+    padding: 1rem 1.5rem;
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.map-container {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.map-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.map-info p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+/* Appointment Form */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.appointment-form .contact-form {
+    background: var(--primary-white);
+    border-radius: 16px;
+    box-shadow: var(--shadow-medium);
+    padding: 2.5rem;
+    border: 1px solid rgba(139, 175, 139, 0.1);
+}
+
+.appointment-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.appointment-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.appointment-form .form-group label {
+    display: block;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.appointment-form .form-group input,
+.appointment-form .form-group select,
+.appointment-form .form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid rgba(139, 175, 139, 0.2);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.875rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background: var(--primary-white);
+}
+
+.appointment-form .form-group input:focus,
+.appointment-form .form-group select:focus,
+.appointment-form .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 3px rgba(139, 175, 139, 0.1);
+}
+
+.appointment-form .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.appointment-form .optional {
+    color: var(--text-light);
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.appointment-form .checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.appointment-form .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.appointment-form .checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.appointment-form .checkbox-text {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--text-dark);
+}
+
+.appointment-form .form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.appointment-form .error-message {
+    color: #e74c3c;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.appointment-form .form-status {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    display: none;
+}
+
+.appointment-form .form-status.success {
+    background: rgba(46, 204, 113, 0.1);
+    color: #27ae60;
+    border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.appointment-form .form-status.error {
+    background: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+    border: 1px solid rgba(231, 76, 60, 0.3);
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 768px) {
+    .locations-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .maps-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .appointment-form .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .location-content {
+        padding: 1.5rem;
+    }
+    
+    .appointment-form .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .appointment-form .form-actions {
+        flex-direction: column;
+    }
+    
+    .location-actions {
+        flex-direction: column;
+    }
+    
+    .location-actions .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .location-header {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .location-content {
+        padding: 1rem;
+    }
+    
+    .appointment-form .contact-form {
+        padding: 1rem;
+    }
+}
+
 /* Selection Styling */
 ::selection {
     background: var(--primary-green);

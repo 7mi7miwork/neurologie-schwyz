@@ -1,5 +1,5 @@
 /**
- * Neurologie Schwyz Website - Main JavaScript
+ * Neurologie Zentralschweiz AG Website - Main JavaScript
  * Modern, accessible, and performant website functionality
  */
 
