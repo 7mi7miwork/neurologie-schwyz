@@ -1,171 +1,351 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kontakt und Terminvereinbarung - Neurologie Schwyz">
-    <title>Kontakt | Neurologie Schwyz</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="description" content="Kontakt und Terminvereinbarung - Neurologie Schwyz. Wir freuen uns auf Ihre Kontaktaufnahme und stehen Ihnen gerne zur Verfügung.">
+    <meta name="keywords" content="Kontakt, Termin, Neurologie, Schwyz, Vereinbarung, Anfahrt">
+    <meta name="author" content="Neurologie Schwyz">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Kontakt | Neurologie Schwyz">
+    <meta property="og:description" content="Kontakt und Terminvereinbarung - Wir freuen uns auf Ihre Kontaktaufnahme.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neurologie-schwyz.ch/kontakt.html">
+    <meta property="og:image" content="https://neurologie-schwyz.ch/assets/images/og-contact.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <title>Kontakt | Neurologie Schwyz</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Hauptnavigation">
             <div class="nav-container">
-                <a href="index.html" class="logo">
+                <a href="index.html" class="logo" aria-label="Neurologie Schwyz Startseite">
                     <h1>Neurologie Schwyz</h1>
                 </a>
-                <button class="nav-toggle" aria-label="Navigation öffnen">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <button class="nav-toggle" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="nav-menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </button>
-                <ul class="nav-menu">
+                <ul class="nav-menu" id="nav-menu">
                     <li><a href="index.html" class="nav-link">Startseite</a></li>
                     <li><a href="team.html" class="nav-link">Team</a></li>
                     <li><a href="blog.html" class="nav-link">Blog</a></li>
-                    <li><a href="kontakt.html" class="nav-link active">Kontakt</a></li>
+                    <li><a href="kontakt.html" class="nav-link active" aria-current="page">Kontakt</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="page-header">
+    <main id="main-content" role="main">
+        <section class="page-header" aria-labelledby="page-title">
             <div class="container">
-                <h1>Kontakt & Terminvereinbarung</h1>
-                <p>Wir freuen uns auf Ihre Kontaktaufnahme und stehen Ihnen gerne zur Verfügung.</p>
+                <h1 id="page-title" class="page-title">Kontakt & Terminvereinbarung</h1>
+                <p class="page-subtitle">Wir freuen uns auf Ihre Kontaktaufnahme und stehen Ihnen gerne zur Verfügung.</p>
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" aria-labelledby="contact-title">
             <div class="container">
                 <div class="contact-grid">
                     <div class="contact-info">
-                        <h2>Praxisdaten</h2>
+                        <h2 id="contact-title" class="section-title">Praxisdaten</h2>
                         <address>
                             <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
                                 <h3>Adresse</h3>
                                 <p>Neurologie Schwyz<br>
                                 Seestrasse 123<br>
                                 6430 Schwyz</p>
                             </div>
                             <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
                                 <h3>Telefon</h3>
-                                <p><a href="tel:+41418101234">041 810 12 34</a></p>
+                                <p><a href="tel:+41418101234" class="contact-link">041 810 12 34</a></p>
+                                <p class="contact-note">Für dringende Fälle wählen Sie bitte die Notfallnummer</p>
                             </div>
                             <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
                                 <h3>Email</h3>
-                                <p><a href="mailto:info@neurologie-schwyz.ch">info@neurologie-schwyz.ch</a></p>
+                                <p><a href="mailto:info@neurologie-schwyz.ch" class="contact-link">info@neurologie-schwyz.ch</a></p>
+                                <p class="contact-note">Wir antworten innerhalb von 24 Stunden</p>
                             </div>
                             <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                </div>
                                 <h3>Öffnungszeiten</h3>
-                                <p>
-                                    Montag - Freitag: 08:00 - 12:00, 14:00 - 18:00<br>
-                                    Samstag: 08:00 - 12:00<br>
-                                    Sonntag: Geschlossen
-                                </p>
+                                <div class="opening-hours">
+                                    <div class="hours-row">
+                                        <span>Montag - Freitag</span>
+                                        <span>08:00 - 12:00, 14:00 - 18:00</span>
+                                    </div>
+                                    <div class="hours-row">
+                                        <span>Samstag</span>
+                                        <span>08:00 - 12:00</span>
+                                    </div>
+                                    <div class="hours-row">
+                                        <span>Sonntag</span>
+                                        <span>Geschlossen</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="contact-item">
+                            <div class="contact-item emergency">
+                                <div class="contact-icon" aria-hidden="true">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                                        <line x1="12" y1="9" x2="12" y2="13"/>
+                                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                                    </svg>
+                                </div>
                                 <h3>Notfall</h3>
-                                <p>Ausserhalb der Öffnungszeiten wenden Sie sich bitte an:<br>
-                                <a href="tel:+41418101444">Notfallpraxis Spital Schwyz: 041 810 14 44</a></p>
+                                <p>Ausserhalb der Öffnungszeiten wenden Sie sich bitte an:</p>
+                                <p><a href="tel:+41418101444" class="contact-link emergency-link">Notfallpraxis Spital Schwyz: 041 810 14 44</a></p>
                             </div>
                         </address>
                     </div>
 
                     <div class="contact-form">
-                        <h2>Terminanfrage</h2>
-                        <form class="form" action="#" method="post">
-                            <div class="form-group">
-                                <label for="name">Vor- und Nachname *</label>
-                                <input type="text" id="name" name="name" required>
+                        <h2 class="section-title">Terminanfrage</h2>
+                        <form class="form" action="#" method="post" novalidate>
+                            <div class="form-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                                <div class="progress-steps">
+                                    <span class="step active" data-step="1">1</span>
+                                    <span class="step" data-step="2">2</span>
+                                    <span class="step" data-step="3">3</span>
+                                </div>
                             </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Vor- und Nachname *</label>
+                                    <input type="text" id="name" name="name" required aria-describedby="name-error">
+                                    <div class="error-message" id="name-error" role="alert"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Telefon *</label>
+                                    <input type="tel" id="phone" name="phone" required aria-describedby="phone-error" placeholder="+41 41 810 12 34">
+                                    <div class="error-message" id="phone-error" role="alert"></div>
+                                </div>
+                            </div>
+                            
                             <div class="form-group">
                                 <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="email" required aria-describedby="email-error" placeholder="name@beispiel.ch">
+                                <div class="error-message" id="email-error" role="alert"></div>
                             </div>
-                            <div class="form-group">
-                                <label for="phone">Telefon *</label>
-                                <input type="tel" id="phone" name="phone" required>
-                            </div>
+                            
                             <div class="form-group">
                                 <label for="appointment-type">Terminart *</label>
-                                <select id="appointment-type" name="appointment-type" required>
+                                <select id="appointment-type" name="appointment-type" required aria-describedby="appointment-type-error">
                                     <option value="">Bitte wählen</option>
                                     <option value="first-visit">Erstkonsultation</option>
                                     <option value="follow-up">Kontrolle</option>
                                     <option value="urgent">Dringend</option>
+                                    <option value="second-opinion">Zweitmeinung</option>
                                     <option value="other">Anderes</option>
                                 </select>
+                                <div class="error-message" id="appointment-type-error" role="alert"></div>
                             </div>
-                            <div class="form-group">
-                                <label for="date">Gewünschtes Datum</label>
-                                <input type="date" id="date" name="date">
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Gewünschtes Datum</label>
+                                    <input type="date" id="date" name="date" min="" aria-describedby="date-error">
+                                    <div class="error-message" id="date-error" role="alert"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">Gewünschte Zeit</label>
+                                    <select id="time" name="time" aria-describedby="time-error">
+                                        <option value="">Keine Präferenz</option>
+                                        <option value="morning">Vormittag (08:00-12:00)</option>
+                                        <option value="afternoon">Nachmittag (14:00-18:00)</option>
+                                    </select>
+                                    <div class="error-message" id="time-error" role="alert"></div>
+                                </div>
                             </div>
+                            
                             <div class="form-group">
-                                <label for="time">Gewünschte Zeit</label>
-                                <select id="time" name="time">
-                                    <option value="">Keine Präferenz</option>
-                                    <option value="morning">Vormittag (08:00-12:00)</option>
-                                    <option value="afternoon">Nachmittag (14:00-18:00)</option>
-                                </select>
+                                <label for="message">Nachricht <span class="optional">(optional)</span></label>
+                                <textarea id="message" name="message" rows="4" placeholder="Beschreiben Sie kurz Ihre Anliegen..." aria-describedby="message-error"></textarea>
+                                <div class="char-counter">
+                                    <span id="char-count">0</span> / 500 Zeichen
+                                </div>
+                                <div class="error-message" id="message-error" role="alert"></div>
                             </div>
-                            <div class="form-group">
-                                <label for="message">Nachricht</label>
-                                <textarea id="message" name="message" rows="4" placeholder="Beschreiben Sie kurz Ihre Anliegen..."></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="consent" name="consent" required>
-                                    Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage gespeichert werden. *
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label" for="consent">
+                                    <input type="checkbox" id="consent" name="consent" required aria-describedby="consent-error">
+                                    <span class="checkbox-text">Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage gespeichert werden. *</span>
                                 </label>
+                                <div class="error-message" id="consent-error" role="alert"></div>
                             </div>
-                            <button type="submit" class="btn btn-primary">Terminanfrage senden</button>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary" aria-describedby="form-status">
+                                    <span class="btn-text">Terminanfrage senden</span>
+                                    <span class="btn-loading" style="display: none;">Wird gesendet...</span>
+                                </button>
+                                <button type="reset" class="btn btn-outline">Formular zurücksetzen</button>
+                            </div>
+                            
+                            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="map">
+        <section class="map" aria-labelledby="map-title">
             <div class="container">
-                <h2>Anfahrt</h2>
+                <h2 id="map-title" class="section-title">Anfahrt</h2>
                 <div class="map-container">
                     <div class="map-placeholder">
-                        <p>Karte wird hier angezeigt</p>
-                        <p>Seestrasse 123, 6430 Schwyz</p>
+                        <div class="map-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <p>Interaktive Karte</p>
+                        <p class="map-address">Seestrasse 123, 6430 Schwyz</p>
+                        <button class="btn btn-outline" onclick="window.open('https://maps.google.com/?q=Seestrasse+123+6430+Schwyz', '_blank')">
+                            In Google Maps öffnen
+                        </button>
                     </div>
                 </div>
                 <div class="directions">
                     <h3>Anreise</h3>
                     <div class="directions-grid">
                         <div class="direction-item">
+                            <div class="direction-icon" aria-hidden="true">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 17l-5 0v-14l5 0m14 14l5 0v-14l-5 0m-9 0h8"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
                             <h4>Mit dem Auto</h4>
-                            <p>Parkplätze sind direkt vor der Praxis verfügbar. Die Praxis ist gut mit dem Auto erreichbar.</p>
+                            <p>Parkplätze sind direkt vor der Praxis verfügbar. Die Praxis ist gut mit dem Auto erreichbar und liegt nahe der A4.</p>
+                            <div class="direction-details">
+                                <span>GPS: 47.0693° N, 8.7507° O</span>
+                                <span>Parkplätze: 6 verfügbar</span>
+                            </div>
                         </div>
                         <div class="direction-item">
+                            <div class="direction-icon" aria-hidden="true">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 17l-5 0v-14l5 0m6 0l5 0v14l-5 0"/>
+                                    <path d="M9 5l6 0"/>
+                                    <path d="M9 9l6 0"/>
+                                    <path d="M9 13l6 0"/>
+                                </svg>
+                            </div>
                             <h4>Mit dem ÖV</h4>
-                            <p>Die Bushaltestelle "Schwyz, Seestrasse" ist 2 Gehminuten von der Praxis entfernt.</p>
+                            <p>Die Bushaltestelle "Schwyz, Seestrasse" ist 2 Gehminuten von der Praxis entfernt. Mehrere Buslinien verkehren regelmässig.</p>
+                            <div class="direction-details">
+                                <span>Bus: Linie 1, 2, 5</span>
+                                <span>Fussweg: ca. 2 Minuten</span>
+                            </div>
                         </div>
                         <div class="direction-item">
+                            <div class="direction-icon" aria-hidden="true">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                            </div>
                             <h4>Zu Fuss</h4>
-                            <p>Vom Bahnhof Schwyz erreichen Sie die Praxis in ca. 10 Gehminuten.</p>
+                            <p>Vom Bahnhof Schwyz erreichen Sie die Praxis in ca. 10 Gehminuten durch die historische Altstadt.</p>
+                            <div class="direction-details">
+                                <span>Gehzeit: ca. 10 Minuten</span>
+                                <span>Entfernung: 800 Meter</span>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cta" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title" class="section-title">Haben Sie Fragen?</h2>
+                    <p>Unser freundliches Team steht Ihnen gerne für alle Fragen zur Verfügung. Zögern Sie nicht, uns zu kontaktieren.</p>
+                    <div class="cta-actions">
+                        <a href="tel:+41418101234" class="btn btn-primary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            Jetzt anrufen
+                        </a>
+                        <a href="mailto:info@neurologie-schwyz.ch" class="btn btn-outline">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            Email schreiben
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+<footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Neurologie Schwyz</h3>
                     <p>Fachärztliche Praxis für Neurologie</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-section">
                     <h4>Navigation</h4>
@@ -179,14 +359,25 @@
                 <div class="footer-section">
                     <h4>Kontakt</h4>
                     <address>
-                        <p>Seestrasse 123<br>6430 Schwyz</p>
+                        <p>Neurologie Schwyz<br>
+                        Seestrasse 123<br>
+                        6430 Schwyz</p>
                         <p>Tel: <a href="tel:+41418101234">041 810 12 34</a></p>
                         <p>Email: <a href="mailto:info@neurologie-schwyz.ch">info@neurologie-schwyz.ch</a></p>
                     </address>
                 </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="agb.html">AGB</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 Neurologie Schwyz. Alle Rechte vorbehalten.</p>
+                <p class="footer-credits">Website erstellt mit ❤️ in Schwyz</p>
             </div>
         </div>
     </footer>
