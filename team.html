@@ -62,144 +62,172 @@
             </div>
         </section>
 
-        <section class="team" aria-labelledby="team-title">
+        <section class="team-section" aria-labelledby="doctors-title">
             <div class="container">
                 <div class="section-header">
-                    <h2 id="team-title" class="section-title">Ärzteteam</h2>
+                    <h2 id="doctors-title" class="section-title">Ärzteteam</h2>
                     <p class="section-subtitle">Erfahrene Fachärzte für Ihre neurologische Gesundheit</p>
                 </div>
+                
                 <div class="team-grid">
-                    <article class="team-member animate-fade-in-up" data-doctor="mueller">
-                        <div class="team-member-image">
-                            <div class="image-placeholder">
-                                <svg width="300" height="400" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="300" height="400" fill="url(#gradient1)"/>
-                                    <circle cx="150" cy="150" r="60" fill="rgba(255,255,255,0.2)"/>
-                                    <path d="M150 120C170 120 190 140 190 170C190 200 170 220 150 220C130 220 110 200 110 170C110 140 130 120 150 120Z" fill="rgba(255,255,255,0.3)"/>
+                    <!-- Dr. med. Anna Müller -->
+                    <article class="team-card">
+                        <div class="team-card-image">
+                            <div class="image-placeholder doctor-placeholder">
+                                <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="250" fill="url(#gradient1)"/>
+                                    <circle cx="100" cy="100" r="40" fill="rgba(255,255,255,0.2)"/>
+                                    <path d="M100 80C115 80 130 95 130 115C130 135 115 150 100 150C85 150 70 135 70 115C70 95 85 80 100 80Z" fill="rgba(255,255,255,0.3)"/>
                                     <defs>
-                                        <linearGradient id="gradient1" x1="0" y1="0" x2="300" y2="400" gradientUnits="userSpaceOnUse">
+                                        <linearGradient id="gradient1" x1="0" y1="0" x2="200" y2="250" gradientUnits="userSpaceOnUse">
                                             <stop stop-color="#2d5016"/>
                                             <stop offset="1" stop-color="#8b6f47"/>
                                         </linearGradient>
                                     </defs>
                                 </svg>
                             </div>
-                            <div class="team-member-badge">
+                            <div class="team-badge">
                                 <span>Leitende Ärztin</span>
                             </div>
                         </div>
-                        <div class="team-member-info">
+                        <div class="team-card-content">
                             <h3>Dr. med. Anna Müller</h3>
-                            <p class="team-member-title">Fachärztin für Neurologie</p>
-                            <p class="team-member-description">Leitende Ärztin mit über 15 Jahren Erfahrung in der neurologischen Diagnostik und Therapie. Spezialisiert auf Epilepsie und Schlafmedizin.</p>
-                            <div class="team-member-specialties">
+                            <p class="team-title">Fachärztin für Neurologie</p>
+                            <p class="team-description">Leitende Ärztin mit über 15 Jahren Erfahrung in der neurologischen Diagnostik und Therapie.</p>
+                            <div class="team-specialties">
                                 <span class="specialty-tag">Epilepsie</span>
                                 <span class="specialty-tag">Schlafmedizin</span>
                                 <span class="specialty-tag">EEG-Diagnostik</span>
                             </div>
-                            <ul class="team-member-qualifications">
-                                <li>Facharzttitel FMH Neurologie</li>
-                                <li>Spezialisierung Epileptologie</li>
-                                <li>Weiterbildung Schlafmedizin</li>
-                                <li>Mitglied Schweizerische Neurologische Gesellschaft</li>
-                            </ul>
-                            <div class="team-member-contact">
-                                <a href="tel:+41418101234" class="contact-link">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                                    </svg>
-                                    Termin vereinbaren
-                                </a>
+                            <button class="btn-more-info" onclick="toggleMoreInfo(this)">
+                                Mehr erfahren
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="team-more-info">
+                                <ul class="team-qualifications">
+                                    <li>Facharzttitel FMH Neurologie</li>
+                                    <li>Spezialisierung Epileptologie</li>
+                                    <li>Weiterbildung Schlafmedizin</li>
+                                    <li>Mitglied Schweizerische Neurologische Gesellschaft</li>
+                                </ul>
+                                <div class="team-contact">
+                                    <a href="tel:+41418101234" class="contact-link">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                        </svg>
+                                        Termin vereinbaren
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </article>
 
-                    <article class="team-member animate-fade-in-up" data-doctor="schneider">
-                        <div class="team-member-image">
-                            <div class="image-placeholder">
-                                <svg width="300" height="400" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="300" height="400" fill="url(#gradient2)"/>
-                                    <circle cx="150" cy="150" r="60" fill="rgba(255,255,255,0.2)"/>
-                                    <path d="M150 120C170 120 190 140 190 170C190 200 170 220 150 220C130 220 110 200 110 170C110 140 130 120 150 120Z" fill="rgba(255,255,255,0.3)"/>
+                    <!-- Dr. med. Thomas Schneider -->
+                    <article class="team-card">
+                        <div class="team-card-image">
+                            <div class="image-placeholder doctor-placeholder">
+                                <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="250" fill="url(#gradient2)"/>
+                                    <circle cx="100" cy="100" r="40" fill="rgba(255,255,255,0.2)"/>
+                                    <path d="M100 80C115 80 130 95 130 115C130 135 115 150 100 150C85 150 70 135 70 115C70 95 85 80 100 80Z" fill="rgba(255,255,255,0.3)"/>
                                     <defs>
-                                        <linearGradient id="gradient2" x1="0" y1="0" x2="300" y2="400" gradientUnits="userSpaceOnUse">
+                                        <linearGradient id="gradient2" x1="0" y1="0" x2="200" y2="250" gradientUnits="userSpaceOnUse">
                                             <stop stop-color="#1a2f0a"/>
                                             <stop offset="1" stop-color="#6d5637"/>
                                         </linearGradient>
                                     </defs>
                                 </svg>
                             </div>
-                            <div class="team-member-badge">
+                            <div class="team-badge">
                                 <span>Spezialist</span>
                             </div>
                         </div>
-                        <div class="team-member-info">
+                        <div class="team-card-content">
                             <h3>Dr. med. Thomas Schneider</h3>
-                            <p class="team-member-title">Facharzt für Neurologie</p>
-                            <p class="team-member-description">Spezialist für Bewegungsstörungen und neurodegenerative Erkrankungen mit umfassender Erfahrung in der Parkinson-Behandlung.</p>
-                            <div class="team-member-specialties">
+                            <p class="team-title">Facharzt für Neurologie</p>
+                            <p class="team-description">Spezialist für Bewegungsstörungen und neurodegenerative Erkrankungen mit umfassender Erfahrung.</p>
+                            <div class="team-specialties">
                                 <span class="specialty-tag">Parkinson</span>
                                 <span class="specialty-tag">Bewegungsstörungen</span>
                                 <span class="specialty-tag">Deep Brain Stimulation</span>
                             </div>
-                            <ul class="team-member-qualifications">
-                                <li>Facharzttitel FMH Neurologie</li>
-                                <li>Spezialisierung Bewegungsstörungen</li>
-                                <li>Parkinson-Fachkompetenz</li>
-                                <li>Deep Brain Stimulation Zertifizierung</li>
-                            </ul>
-                            <div class="team-member-contact">
-                                <a href="tel:+41418101234" class="contact-link">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                                    </svg>
-                                    Termin vereinbaren
-                                </a>
+                            <button class="btn-more-info" onclick="toggleMoreInfo(this)">
+                                Mehr erfahren
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="team-more-info">
+                                <ul class="team-qualifications">
+                                    <li>Facharzttitel FMH Neurologie</li>
+                                    <li>Spezialisierung Bewegungsstörungen</li>
+                                    <li>Parkinson-Fachkompetenz</li>
+                                    <li>Deep Brain Stimulation Zertifizierung</li>
+                                </ul>
+                                <div class="team-contact">
+                                    <a href="tel:+41418101234" class="contact-link">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                        </svg>
+                                        Termin vereinbaren
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </article>
 
-                    <article class="team-member animate-fade-in-up" data-doctor="fischer">
-                        <div class="team-member-image">
-                            <div class="image-placeholder">
-                                <svg width="300" height="400" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="300" height="400" fill="url(#gradient3)"/>
-                                    <circle cx="150" cy="150" r="60" fill="rgba(255,255,255,0.2)"/>
-                                    <path d="M150 120C170 120 190 140 190 170C190 200 170 220 150 220C130 220 110 200 110 170C110 140 130 120 150 120Z" fill="rgba(255,255,255,0.3)"/>
+                    <!-- Dr. med. Sarah Fischer -->
+                    <article class="team-card">
+                        <div class="team-card-image">
+                            <div class="image-placeholder doctor-placeholder">
+                                <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="250" fill="url(#gradient3)"/>
+                                    <circle cx="100" cy="100" r="40" fill="rgba(255,255,255,0.2)"/>
+                                    <path d="M100 80C115 80 130 95 130 115C130 135 115 150 100 150C85 150 70 135 70 115C70 95 85 80 100 80Z" fill="rgba(255,255,255,0.3)"/>
                                     <defs>
-                                        <linearGradient id="gradient3" x1="0" y1="0" x2="300" y2="400" gradientUnits="userSpaceOnUse">
+                                        <linearGradient id="gradient3" x1="0" y1="0" x2="200" y2="250" gradientUnits="userSpaceOnUse">
                                             <stop stop-color="#8b6f47"/>
                                             <stop offset="1" stop-color="#2d5016"/>
                                         </linearGradient>
                                     </defs>
                                 </svg>
                             </div>
-                            <div class="team-member-badge">
+                            <div class="team-badge">
                                 <span>Expertin</span>
                             </div>
                         </div>
-                        <div class="team-member-info">
+                        <div class="team-card-content">
                             <h3>Dr. med. Sarah Fischer</h3>
-                            <p class="team-member-title">Fachärztin für Neurologie</p>
-                            <p class="team-member-description">Expertin für Kopfschmerzerkrankungen und neurologische Schmerztherapie mit Fokus auf multimodale Behandlungskonzepte.</p>
-                            <div class="team-member-specialties">
+                            <p class="team-title">Fachärztin für Neurologie</p>
+                            <p class="team-description">Expertin für Kopfschmerzerkrankungen und neurologische Schmerztherapie mit Fokus auf multimodale Konzepte.</p>
+                            <div class="team-specialties">
                                 <span class="specialty-tag">Kopfschmerzen</span>
                                 <span class="specialty-tag">Schmerztherapie</span>
                                 <span class="specialty-tag">Migräne</span>
                             </div>
-                            <ul class="team-member-qualifications">
-                                <li>Facharzttitel FMH Neurologie</li>
-                                <li>Spezialisierung Kopfschmerzmedizin</li>
-                                <li>Schmerztherapie SGSSM</li>
-                                <li>Interventionelle Schmerztherapie</li>
-                            </ul>
-                            <div class="team-member-contact">
-                                <a href="tel:+41418101234" class="contact-link">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                                    </svg>
-                                    Termin vereinbaren
-                                </a>
+                            <button class="btn-more-info" onclick="toggleMoreInfo(this)">
+                                Mehr erfahren
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="team-more-info">
+                                <ul class="team-qualifications">
+                                    <li>Facharzttitel FMH Neurologie</li>
+                                    <li>Spezialisierung Kopfschmerzmedizin</li>
+                                    <li>Schmerztherapie SGSSM</li>
+                                    <li>Interventionelle Schmerztherapie</li>
+                                </ul>
+                                <div class="team-contact">
+                                    <a href="tel:+41418101234" class="contact-link">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                        </svg>
+                                        Termin vereinbaren
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -207,53 +235,179 @@
             </div>
         </section>
 
-        <section class="team-support" aria-labelledby="support-title">
+        <section class="team-section support-section" aria-labelledby="support-title">
             <div class="container">
-                <h2 id="support-title" class="section-title">Unser medizinisches Support-Team</h2>
-                <div class="support-grid">
-                    <article class="support-member">
-                        <div class="support-member-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                                <circle cx="12" cy="7" r="4"/>
-                            </svg>
+                <div class="section-header">
+                    <h2 id="support-title" class="section-title">Medizinisches Support-Team</h2>
+                    <p class="section-subtitle">Kompetente Unterstützung für Ihre Behandlung</p>
+                </div>
+                
+                <div class="team-grid">
+                    <!-- Maria Weber -->
+                    <article class="team-card">
+                        <div class="team-card-image">
+                            <div class="image-placeholder support-placeholder">
+                                <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="250" fill="url(#gradient4)"/>
+                                    <circle cx="100" cy="100" r="40" fill="rgba(255,255,255,0.2)"/>
+                                    <path d="M100 80C115 80 130 95 130 115C130 135 115 150 100 150C85 150 70 135 70 115C70 95 85 80 100 80Z" fill="rgba(255,255,255,0.3)"/>
+                                    <defs>
+                                        <linearGradient id="gradient4" x1="0" y1="0" x2="200" y2="250" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#6d5637"/>
+                                            <stop offset="1" stop-color="#8b6f47"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="team-badge support-badge">
+                                <span>MPA</span>
+                            </div>
                         </div>
-                        <h3>Maria Weber</h3>
-                        <p class="support-member-title">Medizinische Praxisassistentin</p>
-                        <p>Zuständig für Patientenbetreuung und Terminverwaltung mit über 10 Jahren Erfahrung.</p>
-                        <div class="support-member-qualifications">
-                            <span>Geprüfte MPA</span>
-                            <span>Erste Hilfe Zertifizierung</span>
+                        <div class="team-card-content">
+                            <h3>Maria Weber</h3>
+                            <p class="team-title">Medizinische Praxisassistentin</p>
+                            <p class="team-description">Zuständig für Patientenbetreuung und Terminverwaltung mit über 10 Jahren Erfahrung.</p>
+                            <div class="team-specialties">
+                                <span class="specialty-tag">Patientenbetreuung</span>
+                                <span class="specialty-tag">Terminverwaltung</span>
+                            </div>
+                            <button class="btn-more-info" onclick="toggleMoreInfo(this)">
+                                Mehr erfahren
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="team-more-info">
+                                <ul class="team-qualifications">
+                                    <li>Geprüfte MPA</li>
+                                    <li>Erste Hilfe Zertifizierung</li>
+                                    <li>10+ Jahre Berufserfahrung</li>
+                                </ul>
+                            </div>
                         </div>
                     </article>
-                    <article class="support-member">
-                        <div class="support-member-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                                <circle cx="12" cy="7" r="4"/>
-                            </svg>
+
+                    <!-- Sandra Keller -->
+                    <article class="team-card">
+                        <div class="team-card-image">
+                            <div class="image-placeholder support-placeholder">
+                                <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="250" fill="url(#gradient5)"/>
+                                    <circle cx="100" cy="100" r="40" fill="rgba(255,255,255,0.2)"/>
+                                    <path d="M100 80C115 80 130 95 130 115C130 135 115 150 100 150C85 150 70 135 70 115C70 95 85 80 100 80Z" fill="rgba(255,255,255,0.3)"/>
+                                    <defs>
+                                        <linearGradient id="gradient5" x1="0" y1="0" x2="200" y2="250" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#8b6f47"/>
+                                            <stop offset="1" stop-color="#6d5637"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="team-badge support-badge">
+                                <span>MPA</span>
+                            </div>
                         </div>
-                        <h3>Sandra Keller</h3>
-                        <p class="support-member-title">Medizinische Praxisassistentin</p>
-                        <p>Unterstützung in der Patientenbetreuung und Administration mit Fokus auf Patientenkommunikation.</p>
-                        <div class="support-member-qualifications">
-                            <span>Geprüfte MPA</span>
-                            <span>EDV-Kenntnisse</span>
+                        <div class="team-card-content">
+                            <h3>Sandra Keller</h3>
+                            <p class="team-title">Medizinische Praxisassistentin</p>
+                            <p class="team-description">Unterstützung in der Patientenbetreuung und Administration mit Fokus auf Patientenkommunikation.</p>
+                            <div class="team-specialties">
+                                <span class="specialty-tag">Administration</span>
+                                <span class="specialty-tag">Patientenkommunikation</span>
+                            </div>
+                            <button class="btn-more-info" onclick="toggleMoreInfo(this)">
+                                Mehr erfahren
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="team-more-info">
+                                <ul class="team-qualifications">
+                                    <li>Geprüfte MPA</li>
+                                    <li>EDV-Kenntnisse</li>
+                                    <li>Kundenorientierung</li>
+                                </ul>
+                            </div>
                         </div>
                     </article>
-                    <article class="support-member">
-                        <div class="support-member-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                    <!-- Markus Brunner -->
+                    <article class="team-card">
+                        <div class="team-card-image">
+                            <div class="image-placeholder support-placeholder">
+                                <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="250" fill="url(#gradient6)"/>
+                                    <circle cx="100" cy="100" r="40" fill="rgba(255,255,255,0.2)"/>
+                                    <path d="M100 80C115 80 130 95 130 115C130 135 115 150 100 150C85 150 70 135 70 115C70 95 85 80 100 80Z" fill="rgba(255,255,255,0.3)"/>
+                                    <defs>
+                                        <linearGradient id="gradient6" x1="0" y1="0" x2="200" y2="250" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#2d5016"/>
+                                            <stop offset="1" stop-color="#6d5637"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="team-badge support-badge">
+                                <span>Management</span>
+                            </div>
+                        </div>
+                        <div class="team-card-content">
+                            <h3>Markus Brunner</h3>
+                            <p class="team-title">Praxismanager</p>
+                            <p class="team-description">Verantwortlich für die Organisation und Verwaltung der Praxis mit betriebswirtschaftlicher Expertise.</p>
+                            <div class="team-specialties">
+                                <span class="specialty-tag">Praxismanagement</span>
+                                <span class="specialty-tag">Qualitätsmanagement</span>
+                            </div>
+                            <button class="btn-more-info" onclick="toggleMoreInfo(this)">
+                                Mehr erfahren
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <div class="team-more-info">
+                                <ul class="team-qualifications">
+                                    <li>Betriebswirt HF</li>
+                                    <li>Qualitätsmanagement</li>
+                                    <li>Praxisorganisation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section for additional MPA positions -->
+        <section class="team-section open-positions" aria-labelledby="positions-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="positions-title" class="section-title">Offene Stellen</h2>
+                    <p class="section-subtitle">Werden Sie Teil unseres Teams</p>
+                </div>
+                
+                <div class="positions-grid">
+                    <article class="position-card">
+                        <div class="position-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
                                 <circle cx="12" cy="7" r="4"/>
                             </svg>
                         </div>
-                        <h3>Markus Brunner</h3>
-                        <p class="support-member-title">Praxismanager</p>
-                        <p>Verantwortlich für die Organisation und Verwaltung der Praxis mit betriebswirtschaftlicher Expertise.</p>
-                        <div class="support-member-qualifications">
-                            <span>Betriebswirt HF</span>
-                            <span>Qualitätsmanagement</span>
+                        <h3>Medizinische Praxisassistentin (MPA)</h3>
+                        <p class="position-type">Vollzeit | 80-100%</p>
+                        <p class="position-description">Wir suchen eine engagierte MPA zur Verstärkung unseres Teams. Aufgaben umfassen Patientenbetreuung, Terminverwaltung und administrative Unterstützung.</p>
+                        <div class="position-requirements">
+                            <h4>Profil:</h4>
+                            <ul>
+                                <li>Abgeschlossene Ausbildung als MPA</li>
+                                <li>Erfahrung in der neurologischen Praxis von Vorteil</li>
+                                <li>Freundliche und serviceorientierte Persönlichkeit</li>
+                                <li>Teamfähigkeit und Belastbarkeit</li>
+                            </ul>
+                        </div>
+                        <div class="position-contact">
+                            <a href="kontakt.html" class="btn btn-outline">Jetzt bewerben</a>
                         </div>
                     </article>
                 </div>
@@ -328,6 +482,35 @@
         </div>
     </footer>
 
+    <script>
+        function toggleMoreInfo(button) {
+            const card = button.closest('.team-card');
+            const moreInfo = card.querySelector('.team-more-info');
+            const isExpanded = moreInfo.classList.contains('expanded');
+            
+            // Close all other expanded cards
+            document.querySelectorAll('.team-more-info.expanded').forEach(info => {
+                if (info !== moreInfo) {
+                    info.classList.remove('expanded');
+                    const otherButton = info.closest('.team-card').querySelector('.btn-more-info');
+                    otherButton.classList.remove('expanded');
+                    otherButton.querySelector('svg').style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            // Toggle current card
+            moreInfo.classList.toggle('expanded');
+            button.classList.toggle('expanded');
+            
+            // Rotate arrow icon
+            const arrow = button.querySelector('svg');
+            if (isExpanded) {
+                arrow.style.transform = 'rotate(0deg)';
+            } else {
+                arrow.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
