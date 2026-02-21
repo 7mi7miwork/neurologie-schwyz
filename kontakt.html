@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt und Terminvereinbarung - Neurologie Schwyz">
+    <title>Kontakt | Neurologie Schwyz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <h1>Neurologie Schwyz</h1>
+                </a>
+                <button class="nav-toggle" aria-label="Navigation öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Startseite</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="kontakt.html" class="nav-link active">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Kontakt & Terminvereinbarung</h1>
+                <p>Wir freuen uns auf Ihre Kontaktaufnahme und stehen Ihnen gerne zur Verfügung.</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Praxisdaten</h2>
+                        <address>
+                            <div class="contact-item">
+                                <h3>Adresse</h3>
+                                <p>Neurologie Schwyz<br>
+                                Seestrasse 123<br>
+                                6430 Schwyz</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Telefon</h3>
+                                <p><a href="tel:+41418101234">041 810 12 34</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@neurologie-schwyz.ch">info@neurologie-schwyz.ch</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Öffnungszeiten</h3>
+                                <p>
+                                    Montag - Freitag: 08:00 - 12:00, 14:00 - 18:00<br>
+                                    Samstag: 08:00 - 12:00<br>
+                                    Sonntag: Geschlossen
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Notfall</h3>
+                                <p>Ausserhalb der Öffnungszeiten wenden Sie sich bitte an:<br>
+                                <a href="tel:+41418101444">Notfallpraxis Spital Schwyz: 041 810 14 44</a></p>
+                            </div>
+                        </address>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Terminanfrage</h2>
+                        <form class="form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Vor- und Nachname *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="appointment-type">Terminart *</label>
+                                <select id="appointment-type" name="appointment-type" required>
+                                    <option value="">Bitte wählen</option>
+                                    <option value="first-visit">Erstkonsultation</option>
+                                    <option value="follow-up">Kontrolle</option>
+                                    <option value="urgent">Dringend</option>
+                                    <option value="other">Anderes</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Gewünschtes Datum</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Gewünschte Zeit</label>
+                                <select id="time" name="time">
+                                    <option value="">Keine Präferenz</option>
+                                    <option value="morning">Vormittag (08:00-12:00)</option>
+                                    <option value="afternoon">Nachmittag (14:00-18:00)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Nachricht</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Beschreiben Sie kurz Ihre Anliegen..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="consent" name="consent" required>
+                                    Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage gespeichert werden. *
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Terminanfrage senden</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="container">
+                <h2>Anfahrt</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <p>Karte wird hier angezeigt</p>
+                        <p>Seestrasse 123, 6430 Schwyz</p>
+                    </div>
+                </div>
+                <div class="directions">
+                    <h3>Anreise</h3>
+                    <div class="directions-grid">
+                        <div class="direction-item">
+                            <h4>Mit dem Auto</h4>
+                            <p>Parkplätze sind direkt vor der Praxis verfügbar. Die Praxis ist gut mit dem Auto erreichbar.</p>
+                        </div>
+                        <div class="direction-item">
+                            <h4>Mit dem ÖV</h4>
+                            <p>Die Bushaltestelle "Schwyz, Seestrasse" ist 2 Gehminuten von der Praxis entfernt.</p>
+                        </div>
+                        <div class="direction-item">
+                            <h4>Zu Fuss</h4>
+                            <p>Vom Bahnhof Schwyz erreichen Sie die Praxis in ca. 10 Gehminuten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Neurologie Schwyz</h3>
+                    <p>Fachärztliche Praxis für Neurologie</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <address>
+                        <p>Seestrasse 123<br>6430 Schwyz</p>
+                        <p>Tel: <a href="tel:+41418101234">041 810 12 34</a></p>
+                        <p>Email: <a href="mailto:info@neurologie-schwyz.ch">info@neurologie-schwyz.ch</a></p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Neurologie Schwyz. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
