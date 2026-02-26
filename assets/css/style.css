@@ -3848,3 +3848,260 @@ img {
     background: var(--primary-green);
     color: white;
 }
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal:not(.hidden) {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    position: relative;
+    background: var(--primary-white);
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: var(--shadow-large);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    z-index: 1001;
+}
+
+.modal:not(.hidden) .modal-content {
+    transform: scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: var(--light-green);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1002;
+}
+
+.modal-close:hover {
+    background: var(--primary-green);
+    color: var(--primary-white);
+    transform: scale(1.1);
+}
+
+.modal-close:focus {
+    outline: 2px solid var(--primary-green);
+    outline-offset: 2px;
+}
+
+.modal-body {
+    padding: 3rem 2rem 2rem;
+}
+
+.biography-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--light-green);
+}
+
+.biography-header h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+}
+
+.biography-title {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.biography-approbation {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.biography-section {
+    margin-bottom: 2rem;
+}
+
+.biography-section h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.biography-section h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 20px;
+    background: var(--primary-brown);
+    border-radius: 2px;
+}
+
+.skills-list,
+.career-list,
+.memberships-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li,
+.career-list li,
+.memberships-list li {
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    background: var(--light-green);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-green);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skills-list li:hover,
+.career-list li:hover,
+.memberships-list li:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-soft);
+}
+
+.career-list li {
+    background: var(--light-brown);
+    border-left-color: var(--primary-brown);
+}
+
+.memberships-list li {
+    background: var(--primary-white);
+    border-left-color: var(--dark-brown);
+    border: 1px solid var(--light-brown);
+}
+
+.biography-contact {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--light-green);
+    margin-top: 2rem;
+}
+
+/* Modal Responsive Design */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        max-height: 90vh;
+    }
+    
+    .modal-body {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+    
+    .biography-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .biography-title {
+        font-size: 1.1rem;
+    }
+    
+    .modal-close {
+        top: 1rem;
+        right: 1rem;
+        width: 36px;
+        height: 36px;
+    }
+    
+    .biography-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .skills-list li,
+    .career-list li,
+    .memberships-list li {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 98%;
+        border-radius: 8px;
+    }
+    
+    .modal-body {
+        padding: 1.5rem 1rem 1rem;
+    }
+    
+    .biography-header {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    
+    .biography-header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .biography-title {
+        font-size: 1rem;
+    }
+    
+    .biography-section {
+        margin-bottom: 1.5rem;
+    }
+    
+    .biography-section h3 {
+        font-size: 1.1rem;
+    }
+    
+    .skills-list li,
+    .career-list li,
+    .memberships-list li {
+        padding: 0.5rem 0.7rem;
+        font-size: 0.9rem;
+    }
+}
