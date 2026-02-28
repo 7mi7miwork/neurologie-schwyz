@@ -153,58 +153,308 @@
                         </div>
 
                         <div class="therapy-areas">
-                            <h3>Behandlungsbereiche</h3>
-                            <div class="areas-grid">
-                                <div class="area-item">
-                                    <h4>Migräne und Kopfschmerzen</h4>
-                                    <p>Akutbehandlung und Prophylaxe von verschiedenen Kopfschmerztypen.</p>
-                                </div>
-                                <div class="area-item">
-                                    <h4>Epilepsie-Behandlung</h4>
-                                    <p>Medikamentöse Einstellung und Verlaufskontrolle bei Epilepsie.</p>
-                                </div>
-                                <div class="area-item">
-                                    <h4>Multiple Sklerose</h4>
-                                    <p>Immunmodulatorische Therapien und Symptommanagement.</p>
-                                </div>
-                                <div class="area-item">
-                                    <h4>Parkinson-Erkrankung</h4>
-                                    <p>Optimierung der medikamentösen Therapie und Begleitbehandlungen.</p>
-                                </div>
-                                <div class="area-item">
-                                    <h4>Polyneuropathien</h4>
-                                    <p>Behandlung von Nervenschmerzen und funktionellen Störungen.</p>
-                                </div>
-                                <div class="area-item">
-                                    <h4>Schlaganfall-Rehabilitation</h4>
-                                    <p>Folgebehandlung nach Hirninfarkt zur Wiederherstellung der Funktionen.</p>
-                                </div>
-                            </div>
-                        </div>
+                            <h3>Spezialisierte Therapiebereiche</h3>
+                            <div class="therapy-grid">
+                                <!-- Epilepsie -->
+                                <article class="therapy-card">
+                                    <div class="therapy-card-header">
+                                        <div class="therapy-icon">
+                                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                                                <path d="M12 8v8"/>
+                                                <path d="M8 12h8"/>
+                                            </svg>
+                                        </div>
+                                        <h3>Epilepsie</h3>
+                                    </div>
+                                    <div class="therapy-summary">
+                                        <p><strong>Symptome:</strong> Wiederkehrende epileptische Anfälle mit plötzlichem Auftreten</p>
+                                        <p><strong>Behandlung:</strong> Medikamentöse Therapie mit Antikonvulsiva</p>
+                                    </div>
+                                    <button class="btn-therapy-toggle" onclick="toggleTherapy('epilepsie')">
+                                        Mehr erfahren
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M6 9l6 6 6-6"/>
+                                        </svg>
+                                    </button>
+                                    <div id="epilepsie-details" class="therapy-details hidden">
+                                        <div class="therapy-content">
+                                            <h4>Was ist Epilepsie?</h4>
+                                            <p>Epilepsie ist eine Erkrankung des Gehirns, die durch das Auftreten von wiederkehrenden epileptischen Anfällen gekennzeichnet ist. Bei einem epileptischen Anfall entladen sich Hirnzellen gleichzeitig (synchron) entweder in einem abgegrenzten Hirnbereich oder im gesamten Gehirn.</p>
+                                            
+                                            <h4>Symptome</h4>
+                                            <ul>
+                                                <li>Plötzlich auftretende Anfälle</li>
+                                                <li>Bewusstseinsverlust möglich</li>
+                                                <li>Willentlich nicht beeinflussbar</li>
+                                                <li>Kann sich auf bestimmte Körperregionen beschränken</li>
+                                            </ul>
+                                            
+                                            <h4>Diagnose</h4>
+                                            <p>Die Diagnose wird aus der Anfallsbeschreibung und dem EEG-Befund gestellt. Zur Diagnose einer symptomatischen Epilepsie sind ein MRI des Gehirns und Laboruntersuchungen erforderlich.</p>
+                                            
+                                            <h4>Therapie</h4>
+                                            <p>Ziel der Therapie ist Anfallsfreiheit. Verschiedene Medikamente (Antikonvulsiva) stehen zur Verfügung. Der Grundsatz lautet: "So wenig wie möglich, so viel wie notwendig".</p>
+                                            <ul>
+                                                <li>Medikamentöse Behandlung mit Antiepileptika</li>
+                                                <li>Behandlung der Grunderkrankung bei symptomatischer Epilepsie</li>
+                                                <li>Epilepsiechirurgischer Eingriff bei Therapieresistenz</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
 
-                        <div class="therapy-process">
-                            <h3>Der therapeutische Prozess</h3>
-                            <div class="process-steps">
-                                <div class="step">
-                                    <div class="step-number">1</div>
-                                    <h4>Diagnose und Bewertung</h4>
-                                    <p>Präzise Diagnosestellung und Bewertung des aktuellen Zustands.</p>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">2</div>
-                                    <h4>Individuelle Therapieplanung</h4>
-                                    <p>Entwicklung eines massgeschneiderten Behandlungsplans.</p>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">3</div>
-                                    <h4>Therapiedurchführung</h4>
-                                    <p>Umsetzung der geplanten therapeutischen Massnahmen.</p>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">4</div>
-                                    <h4>Verlaufskontrolle und Anpassung</h4>
-                                    <p>Regelmässige Überprüfung und Anpassung der Therapie.</p>
-                                </div>
+                                <!-- Multiple Sklerose -->
+                                <article class="therapy-card">
+                                    <div class="therapy-card-header">
+                                        <div class="therapy-icon">
+                                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="10"/>
+                                                <path d="M12 2v20M2 12h20"/>
+                                                <path d="M8 12h8M12 8v8"/>
+                                            </svg>
+                                        </div>
+                                        <h3>Multiple Sklerose</h3>
+                                    </div>
+                                    <div class="therapy-summary">
+                                        <p><strong>Symptome:</strong> Sehstörungen, Sensibilitätsstörungen, Schwindel, Gangunsicherheit</p>
+                                        <p><strong>Behandlung:</strong> Immunmodulatorische Therapien und Schubbehandlung</p>
+                                    </div>
+                                    <button class="btn-therapy-toggle" onclick="toggleTherapy('multiple-sklerose')">
+                                        Mehr erfahren
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M6 9l6 6 6-6"/>
+                                        </svg>
+                                    </button>
+                                    <div id="multiple-sklerose-details" class="therapy-details hidden">
+                                        <div class="therapy-content">
+                                            <h4>Was ist Multiple Sklerose?</h4>
+                                            <p>Die Multiple Sklerose (MS) ist eine chronisch entzündliche Erkrankung des Zentralnervensystems (ZNS). Dabei greifen aktivierte, körpereigene Immunzellen die Isolierung der Nervenfortsätze (Myelinzellen) in Gehirn und Rückenmark an.</p>
+                                            
+                                            <h4>Symptome</h4>
+                                            <ul>
+                                                <li>Sehstörungen (mehrere Tage oder Wochen anhaltend)</li>
+                                                <li>Sensibilitätsstörungen wie Kribbeln oder Taubheitsgefühl</li>
+                                                <li>Kraftminderung der Arme oder Beine</li>
+                                                <li>Schwindel oder Gangunsicherheit</li>
+                                                <li>Schubweiser Verlauf oder chronisch fortschreitend</li>
+                                            </ul>
+                                            
+                                            <h4>Diagnose</h4>
+                                            <p>Zur sicheren Diagnose ist die Kombination aus klinischer Untersuchung, Magnetresonanztomographie (MRI) von Gehirn und Rückenmark, Liquorpunktion und evozierten Potentialen (VEP, SEP) notwendig.</p>
+                                            
+                                            <h4>Therapie</h4>
+                                            <p>Das Ziel einer frühzeitigen MS-Therapie ist den Zelluntergang zu verhindern.</p>
+                                            <ul>
+                                                <li>Akute Schubbehandlung mit hochdosierter Cortison-Infusion</li>
+                                                <li>Immunmodulatorische Therapien zur Schubprophylaxe</li>
+                                                <li>Injektionspräparate: Interferone, Glatirameracetat</li>
+                                                <li>Tablettenpräparate: Fingolimod, Teriflunomid, Dimethylfumarat</li>
+                                                <li>Infusionstherapien bei schwerem Verlauf</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Morbus Parkinson -->
+                                <article class="therapy-card">
+                                    <div class="therapy-card-header">
+                                        <div class="therapy-icon">
+                                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="3"/>
+                                                <path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/>
+                                            </svg>
+                                        </div>
+                                        <h3>Morbus Parkinson</h3>
+                                    </div>
+                                    <div class="therapy-summary">
+                                        <p><strong>Symptome:</strong> Beweglichkeitsverminderung, Muskelsteifheit, Zittern, Gleichgewichtsstörungen</p>
+                                        <p><strong>Behandlung:</strong> Dopaminersatztherapie und tiefe Hirnstimulation</p>
+                                    </div>
+                                    <button class="btn-therapy-toggle" onclick="toggleTherapy('morbus-parkinson')">
+                                        Mehr erfahren
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M6 9l6 6 6-6"/>
+                                        </svg>
+                                    </button>
+                                    <div id="morbus-parkinson-details" class="therapy-details hidden">
+                                        <div class="therapy-content">
+                                            <h4>Was ist Morbus Parkinson?</h4>
+                                            <p>Das idiopathische Parkinsonsyndrom ist eine chronische degenerative Hirnerkrankung, bei der u.a. Hirnzellen, welche den Überträgerstoff Dopamin produzieren, untergehen.</p>
+                                            
+                                            <h4>Symptome</h4>
+                                            <ul>
+                                                <li>Verminderte Beweglichkeit (Akinese)</li>
+                                                <li>Muskelsteifheit (Rigor)</li>
+                                                <li>Muskelzittern (Tremor)</li>
+                                                <li>Störungen des Gleichgewichtes (posturale Instabilität)</li>
+                                                <li>Nichtmotorische Symptome: autonome Störungen, Depression, Hirnleistungsminderung</li>
+                                            </ul>
+                                            
+                                            <h4>Diagnose</h4>
+                                            <p>Die Diagnose wird klinisch gestellt. Magnetresonanztomographie (MRI) und Positronenemmissionstomographie (PET) helfen bei der Differenzierung gegen andere Erkrankungen.</p>
+                                            
+                                            <h4>Therapie</h4>
+                                            <p>Therapeutisch werden Medikamente angewendet, die das fehlende Dopamin ersetzen.</p>
+                                            <ul>
+                                                <li>Dopaminersatztherapie</li>
+                                                <li>Regelmässige Medikamentenanpassungen im Verlauf</li>
+                                                <li>Tiefe Hirnstimulation als Therapiealternative</li>
+                                                <li>Multimodales Behandlungskonzept</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Kopfschmerz -->
+                                <article class="therapy-card">
+                                    <div class="therapy-card-header">
+                                        <div class="therapy-icon">
+                                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M12 2v20M2 12h20"/>
+                                                <path d="M8 12h8M12 8v8"/>
+                                                <circle cx="12" cy="12" r="3"/>
+                                            </svg>
+                                        </div>
+                                        <h3>Kopfschmerz</h3>
+                                    </div>
+                                    <div class="therapy-summary">
+                                        <p><strong>Symptome:</strong> Spannungskopfschmerzen, Migräne, Cluster-Kopfschmerzen</p>
+                                        <p><strong>Behandlung:</strong> Akutbehandlung und Prophylaxe je nach Kopfschmerzart</p>
+                                    </div>
+                                    <button class="btn-therapy-toggle" onclick="toggleTherapy('kopfschmerz')">
+                                        Mehr erfahren
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M6 9l6 6 6-6"/>
+                                        </svg>
+                                    </button>
+                                    <div id="kopfschmerz-details" class="therapy-details hidden">
+                                        <div class="therapy-content">
+                                            <h4>Was ist Kopfschmerz?</h4>
+                                            <p>Kopfschmerz gehört zu den Volkskrankheiten unserer Zeit. Mehr als 2/3 der Bevölkerung haben Erfahrung mit Kopfschmerzen. Behandlungsbedürftig ist Kopfschmerz, wenn er die Lebensqualität und die Leistungsfähigkeit deutlich einschränkt.</p>
+                                            
+                                            <h4>Kopfschmerzarten</h4>
+                                            <ul>
+                                                <li>Spannungskopfschmerz (>90% der Fälle)</li>
+                                                <li>Migräne</li>
+                                                <li>Cluster-Kopfschmerz</li>
+                                                <li>Trigeminusneuralgie</li>
+                                            </ul>
+                                            
+                                            <h4>Diagnose</h4>
+                                            <p>Bei erstmals auftretendem Kopfschmerz ohne erkennbaren Auslöser und Kopfschmerz, der mit Nackensteifigkeit, Erbrechen und/oder Fieber einhergeht, müssen zugrundeliegende Hirnerkrankungen ausgeschlossen werden.</p>
+                                            
+                                            <h4>Therapie</h4>
+                                            <p>Die Therapie richtet sich nach der Art der Kopfschmerzen und deren Ursache.</p>
+                                            <ul>
+                                                <li>Akute Spannungskopfschmerzen: Schmerzmedikamente (Analgetika)</li>
+                                                <li>Chronische Spannungskopfschmerzen: Medikamente + Entspannungsübungen</li>
+                                                <li>Migräneattacke: Spezifische Schmerzmittel (Triptane)</li>
+                                                <li>Migräneprophylaxe: Natürliche Basis (Magnesium, Vitamin B2) oder pharmazeutisch</li>
+                                                <li>Clusterkopfschmerzen: Sauerstoffinhalation, Triptane, Calciumantagonisten</li>
+                                                <li>Trigeminusneuralgie: Carbamazepin, neurochirurgischer Eingriff bei Versagen</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Spastik -->
+                                <article class="therapy-card">
+                                    <div class="therapy-card-header">
+                                        <div class="therapy-icon">
+                                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                            </svg>
+                                        </div>
+                                        <h3>Spastik</h3>
+                                    </div>
+                                    <div class="therapy-summary">
+                                        <p><strong>Symptome:</strong> Erhöhte Muskelspannung, Muskelsteifheit, Bewegungseinschränkungen</p>
+                                        <p><strong>Behandlung:</strong> Physiotherapie, medikamentöse Behandlung, Botulinumtoxin</p>
+                                    </div>
+                                    <button class="btn-therapy-toggle" onclick="toggleTherapy('spastik')">
+                                        Mehr erfahren
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M6 9l6 6 6-6"/>
+                                        </svg>
+                                    </button>
+                                    <div id="spastik-details" class="therapy-details hidden">
+                                        <div class="therapy-content">
+                                            <h4>Was ist Spastik?</h4>
+                                            <p>Unter Spastik verstehen Ärzte eine erhöhte Muskelspannung als Folge einer Schädigung von Gehirn oder Rückenmark. Besonders am Beginn einer schnellen Dehnung kommt es zum erhöhten Widerstand in der betroffenen Muskulatur.</p>
+                                            
+                                            <h4>Ursachen</h4>
+                                            <ul>
+                                                <li>Hirnschlag</li>
+                                                <li>Multiple Sklerose</li>
+                                                <li>Querschnittslähmung</li>
+                                                <li>Frühkindliche Hirnschädigungen</li>
+                                            </ul>
+                                            
+                                            <h4>Symptome</h4>
+                                            <ul>
+                                                <li>Erhöhter Widerstand bei schneller Dehnung</li>
+                                                <li>Steife Muskeln</li>
+                                                <li>Bewegungseinschränkungen</li>
+                                                <li>Muskelschmerzen bei starker Ausprägung</li>
+                                            </ul>
+                                            
+                                            <h4>Therapie</h4>
+                                            <p>Spastik kann durch Bewegung gelindert werden. Therapie der Wahl sollte zunächst immer Physiotherapie sein.</p>
+                                            <ul>
+                                                <li>Physiotherapie als Basisbehandlung</li>
+                                                <li>Botulinumtoxin bei lokaler Spastik</li>
+                                                <li>Lioresalpumpe bei ausgeprägter Spastik</li>
+                                                <li>Muskelentspannende Medikamente: Baclofen, Tizanidin, Tolperison, Benzodiazepine</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Botulinumtoxin -->
+                                <article class="therapy-card">
+                                    <div class="therapy-card-header">
+                                        <div class="therapy-icon">
+                                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                                <rect x="2" y="9" width="4" height="12"/>
+                                                <path d="M22 9a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2"/>
+                                            </svg>
+                                        </div>
+                                        <h3>Botulinumtoxin</h3>
+                                    </div>
+                                    <div class="therapy-summary">
+                                        <p><strong>Anwendung:</strong> Spastik, dystone Störungen, übermässige Schweissbildung</p>
+                                        <p><strong>Behandlung:</strong> Gezielte Injektionen in betroffene Muskeln oder Drüsen</p>
+                                    </div>
+                                    <button class="btn-therapy-toggle" onclick="toggleTherapy('botox')">
+                                        Mehr erfahren
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M6 9l6 6 6-6"/>
+                                        </svg>
+                                    </button>
+                                    <div id="botox-details" class="therapy-details hidden">
+                                        <div class="therapy-content">
+                                            <h4>Was ist Botulinumtoxin?</h4>
+                                            <p>Botulinumtoxin ist eine Substanz, die vorübergehend Acetylcholin-Rezeptoren blockiert, die sich an Muskelzellen befinden und für die Reizüberleitung zwischen Nerven und Muskeln eine zentrale Rolle spielen.</p>
+                                            
+                                            <h4>Anwendungsgebiete</h4>
+                                            <ul>
+                                                <li>Spastik in einzelnen Muskeln</li>
+                                                <li>Dystone Störungen (z.B. Torticollis spasmodicus, Blepharospasmus)</li>
+                                                <li>Reduktion der Schweissbildung in Hautpartien</li>
+                                                <li>Reduktion von übermässigem Speichel- oder Tränenfluss</li>
+                                            </ul>
+                                            
+                                            <h4>Sicherheit</h4>
+                                            <p>Eine Botulinumtoxin-Vergiftung ist bei der medizinischen Anwendung nicht zu fürchten. Die injizierten Mengen sind hierfür viel zu gering.</p>
+                                            
+                                            <h4>Behandlung</h4>
+                                            <p>Die Behandlung wird nach genauer Diagnosestellung und Kostengutsprache durch die Krankenkasse in einem maximal 3-monatigem Intervall durchgeführt.</p>
+                                        </div>
+                                    </div>
+                                </article>
                             </div>
                         </div>
 
@@ -244,23 +494,39 @@
 
                     <div class="content-sidebar">
                         <div class="sidebar-widget">
-                            <h3>Schnellkontakt</h3>
-                            <div class="contact-info">
-                                <div class="contact-item">
-                                    <strong>Telefon:</strong><br>
-                                    <a href="tel:+41418101234">041 810 12 34</a>
+                            <h3>Der therapeutische Prozess</h3>
+                            <div class="sidebar-steps">
+                                <div class="sidebar-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Diagnose und Bewertung</h4>
+                                        <p>Präzise Diagnosestellung und Bewertung des aktuellen Zustands.</p>
+                                    </div>
                                 </div>
-                                <div class="contact-item">
-                                    <strong>E-Mail:</strong><br>
-                                    <a href="mailto:info@neurologie-zentralschweiz.ch">info@neurologie-zentralschweiz.ch</a>
+                                <div class="sidebar-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Individuelle Therapieplanung</h4>
+                                        <p>Entwicklung eines massgeschneiderten Behandlungsplans.</p>
+                                    </div>
                                 </div>
-                                <div class="contact-item">
-                                    <strong>Termin:</strong><br>
-                                    <a href="kontakt.html">Online vereinbaren</a>
+                                <div class="sidebar-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Therapiedurchführung</h4>
+                                        <p>Umsetzung der geplanten therapeutischen Massnahmen.</p>
+                                    </div>
+                                </div>
+                                <div class="sidebar-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Verlaufskontrolle und Anpassung</h4>
+                                        <p>Regelmässige Überprüfung und Anpassung der Therapie.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="sidebar-widget">
                             <h3>Unsere Leistungen</h3>
                             <ul class="sidebar-links">
@@ -273,9 +539,9 @@
                         <div class="sidebar-widget">
                             <h3>Therapieinformationen</h3>
                             <ul>
-                                <li><a href="#">Medikamenteninformationen</a></li>
-                                <li><a href="#">Therapiehinweise</a></li>
-                                <li><a href="#">Nebenwirkungsmanagement</a></li>
+                                <li><a href="#">Therapie-Vorbereitung</a></li>
+                                <li><a href="#">Nachsorge-Hinweise</a></li>
+                                <li><a href="#">Allgemeine Informationen</a></li>
                             </ul>
                         </div>
                     </div>
@@ -365,5 +631,22 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script>
+        function toggleTherapy(therapyId) {
+            const details = document.getElementById(therapyId + '-details');
+            const button = details.previousElementSibling;
+            const icon = button.querySelector('svg');
+            
+            if (details.classList.contains('hidden')) {
+                details.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+                button.innerHTML = 'Weniger erfahren<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>';
+            } else {
+                details.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+                button.innerHTML = 'Mehr erfahren<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>';
+            }
+        }
+    </script>
 </body>
 </html>
