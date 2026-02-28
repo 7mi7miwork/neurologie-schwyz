@@ -706,37 +706,38 @@
                 `;
             }
             
-            // Career section (new structure)
+            // Career section (handle both old array structure and new object structure)
             if (bio.career) {
-                modalContent += `
-                    <div class="biography-section">
-                        <h3>${bio.career.title}</h3>
-                        <ul class="career-list">
-                            ${bio.career.content.map(item => `<li>${item}</li>`).join('')}
-                        </ul>
-                    </div>
-                `;
+                if (Array.isArray(bio.career) && bio.career.length > 0) {
+                    // Old structure: career is an array
+                    modalContent += `
+                        <div class="biography-section">
+                            <h3>Medizinischer Werdegang</h3>
+                            <ul class="career-list">
+                                ${bio.career.map(item => `<li>${item}</li>`).join('')}
+                            </ul>
+                        </div>
+                    `;
+                } else if (bio.career.content && Array.isArray(bio.career.content)) {
+                    // New structure: career is an object with title and content
+                    modalContent += `
+                        <div class="biography-section">
+                            <h3>${bio.career.title}</h3>
+                            <ul class="career-list">
+                                ${bio.career.content.map(item => `<li>${item}</li>`).join('')}
+                            </ul>
+                        </div>
+                    `;
+                }
             }
             
-            // Skills (old structure - for compatibility)
+            // Skills section (Fähigkeitsausweise)
             if (bio.skills && bio.skills.length > 0) {
                 modalContent += `
                     <div class="biography-section">
                         <h3>Fähigkeitsausweise</h3>
                         <ul class="skills-list">
                             ${bio.skills.map(skill => `<li>${skill}</li>`).join('')}
-                        </ul>
-                    </div>
-                `;
-            }
-            
-            // Career (old structure - for compatibility)
-            if (bio.career && Array.isArray(bio.career) && bio.career.length > 0) {
-                modalContent += `
-                    <div class="biography-section">
-                        <h3>Medizinischer Werdegang</h3>
-                        <ul class="career-list">
-                            ${bio.career.map(item => `<li>${item}</li>`).join('')}
                         </ul>
                     </div>
                 `;
