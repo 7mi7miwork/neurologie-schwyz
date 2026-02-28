@@ -558,24 +558,52 @@
                 ]
             },
             'catharina-mica-keller': {
-                name: 'Dr. med. Catharina Mica-Keller',
-                title: 'Fachärztin für Neurologie',
-                approbation: '2012',
-                skills: ['Epileptologie', 'Schlafmedizin', 'Neurosonologie'],
-                career: [
-                    '2004 – 2011 Medizinstudium Universität Genf',
-                    '2011 – 2012 Arzt im Praktikum Hôpitaux Universitaires de Genève',
-                    '2012 – 2017 Facharztausbildung Neurologie Universitätsspital Lausanne',
-                    '2017 Facharztabschluss Neurologie',
-                    '2017 – 2020 Oberärztin Epilepsie-Zentrum Universitätsspital Zürich',
-                    '2020 – 2023 Leitende Ärztin Schlafmedizin Klinik Barmelweid',
-                    'seit 2023 Fachärztin Neurologie Zentralschweiz AG'
-                ],
-                memberships: [
-                    'Schweizerische Neurologische Gesellschaft SNG',
-                    'Schweizerische Epilepsie-Liga SEL',
-                    'Schweizerische Gesellschaft für Schlafforschung und Schlafmedizin SGSS'
-                ]
+                name: 'Dr. med. Dipl. biol. Catharina Lydia Ann Mica, geb. Keller',
+                title: 'Fachärztin für Neurologie FMH',
+                personal: {
+                    birth: 'Geboren am 25.10.1978 in Hamburg',
+                    family: 'Verheiratet, ein Sohn (geb. 2017)'
+                },
+                education: {
+                    title: 'Ausbildung und Studium',
+                    content: [
+                        'Studium der Biologie an der Rheinischen Friedrich-Wilhelms-Universität Bonn, abgeschlossen mit Diplom',
+                        'Parallel Medizinstudium, 2007 abgeschlossen mit Staatsexamen und Approbation',
+                        'Medizinische Doktorarbeit im Bereich der Stammzellforschung am Institut für Rekonstruktive Neurobiologie (Life & Brain Center)',
+                        'Dissertation: "Neuronal specification by forced expression of Pax6 in embryonic stem cell-derived precursors"',
+                        'Zehnmonatiger Forschungsaufenthalt 2008 am RIKEN-Institut in Tokio, neurophysiologisches Labor (Modellorganismus: Zebrafisch)'
+                    ]
+                },
+                training: {
+                    title: 'Klinische Weiterbildung',
+                    content: [
+                        'UniversitätsSpital Zürich (Station, Poliklinik, Notfall, Stroke Unit)',
+                        'Universitätsklinik Köln (Normalstation, Frührehabilitation, Poliklinik, Notaufnahme, Stroke Unit, Intensivstation)',
+                        'Psychiatrisches Fremdjahr an der LVR-Klinik Köln (Allgemeinpsychiatrie, Suchtmedizin, Gerontopsychiatrie)',
+                        '2016 Erwerb des Facharzttitels für Neurologie'
+                    ]
+                },
+                qualifications: {
+                    title: 'Zusatzqualifikationen',
+                    content: [
+                        'Zertifikat EMG und EP (rezertifiziert 2025)',
+                        'Zertifikat EEG (rezertifiziert 03/2022)',
+                        'Anerkennung durch MEBEKO',
+                        'FMH GLN: 7601003858563'
+                    ]
+                },
+                memberships: {
+                    title: 'Mitgliedschaften',
+                    content: ['DGN', 'DGKN', 'SNG', 'SGKN']
+                },
+                career: {
+                    title: 'Berufliche Tätigkeit',
+                    content: [
+                        'Oberärztin Neurologie, Kantonsspital Winterthur',
+                        'Oberärztliche Praxistätigkeit in Zürich',
+                        'Seit März 2022 selbstständige ärztliche Tätigkeit in der Neurologie Zentralschweiz AG an den Standorten Zug und Schwyz'
+                    ]
+                }
             }
         };
 
@@ -586,45 +614,123 @@
             
             if (!bio) return;
             
-            // Generate modal content
-            modalBody.innerHTML = `
+            // Generate modal content with support for both old and new data structures
+            let modalContent = `
                 <div class="biography-header">
                     <h2 id="modal-title">${bio.name}</h2>
                     <p class="biography-title">${bio.title}</p>
                     ${bio.approbation ? `<p class="biography-approbation">Approbationsjahr: ${bio.approbation}</p>` : ''}
                 </div>
+            `;
+            
+            // Personal information (new structure)
+            if (bio.personal) {
+                modalContent += `
+                    <div class="biography-section">
+                        <h3>Persönliches</h3>
+                        <div class="personal-info">
+                            ${bio.personal.birth ? `<p><strong>Geburt:</strong> ${bio.personal.birth}</p>` : ''}
+                            ${bio.personal.family ? `<p><strong>Familie:</strong> ${bio.personal.family}</p>` : ''}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // Education section (new structure)
+            if (bio.education) {
+                modalContent += `
+                    <div class="biography-section">
+                        <h3>${bio.education.title}</h3>
+                        <ul class="career-list">
+                            ${bio.education.content.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+            
+            // Training section (new structure)
+            if (bio.training) {
+                modalContent += `
+                    <div class="biography-section">
+                        <h3>${bio.training.title}</h3>
+                        <ul class="career-list">
+                            ${bio.training.content.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+            
+            // Qualifications section (new structure)
+            if (bio.qualifications) {
+                modalContent += `
+                    <div class="biography-section">
+                        <h3>${bio.qualifications.title}</h3>
+                        <ul class="career-list">
+                            ${bio.qualifications.content.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+            
+            // Career section (new structure)
+            if (bio.career) {
+                modalContent += `
+                    <div class="biography-section">
+                        <h3>${bio.career.title}</h3>
+                        <ul class="career-list">
+                            ${bio.career.content.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+            
+            // Skills (old structure - for compatibility)
+            if (bio.skills && bio.skills.length > 0) {
+                modalContent += `
+                    <div class="biography-section">
+                        <h3>Fähigkeitsausweise</h3>
+                        <ul class="skills-list">
+                            ${bio.skills.map(skill => `<li>${skill}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+            
+            // Career (old structure - for compatibility)
+            if (bio.career && Array.isArray(bio.career) && bio.career.length > 0) {
+                modalContent += `
+                    <div class="biography-section">
+                        <h3>Medizinischer Werdegang</h3>
+                        <ul class="career-list">
+                            ${bio.career.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+            
+            // Memberships (support both old and new structure)
+            if (bio.memberships) {
+                const membershipList = Array.isArray(bio.memberships) ? bio.memberships : bio.memberships.content;
+                const membershipTitle = bio.memberships.title || 'Mitgliedschaften';
                 
-                ${bio.skills && bio.skills.length > 0 ? `
-                <div class="biography-section">
-                    <h3>Fähigkeitsausweise</h3>
-                    <ul class="skills-list">
-                        ${bio.skills.map(skill => `<li>${skill}</li>`).join('')}
-                    </ul>
-                </div>
-                ` : ''}
-                
-                ${bio.career && bio.career.length > 0 ? `
-                <div class="biography-section">
-                    <h3>Medizinischer Werdegang</h3>
-                    <ul class="career-list">
-                        ${bio.career.map(item => `<li>${item}</li>`).join('')}
-                    </ul>
-                </div>
-                ` : ''}
-                
-                ${bio.memberships && bio.memberships.length > 0 ? `
-                <div class="biography-section">
-                    <h3>Mitgliedschaften</h3>
-                    <ul class="memberships-list">
-                        ${bio.memberships.map(member => `<li>${member}</li>`).join('')}
-                    </ul>
-                </div>
-                ` : ''}
-                
+                modalContent += `
+                    <div class="biography-section">
+                        <h3>${membershipTitle}</h3>
+                        <ul class="memberships-list">
+                            ${membershipList.map(member => `<li>${member}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+            
+            modalContent += `
                 <div class="biography-contact">
                     <a href="tel:+41418101234" class="btn btn-primary">Termin vereinbaren</a>
                 </div>
             `;
+            
+            // Set modal content
+            modalBody.innerHTML = modalContent;
             
             // Show modal
             modal.classList.remove('hidden');

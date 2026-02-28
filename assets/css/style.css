@@ -4041,6 +4041,24 @@ img {
     margin-top: 2rem;
 }
 
+.personal-info {
+    background: linear-gradient(135deg, #f8faf8, var(--primary-white));
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-brown);
+}
+
+.personal-info p {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.personal-info strong {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
 /* Modal Responsive Design */
 @media (max-width: 768px) {
     .modal-content {
