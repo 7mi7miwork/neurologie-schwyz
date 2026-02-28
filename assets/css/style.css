@@ -4146,3 +4146,64 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
+
+/* =========================
+   Kontakt & Quick Kontakt
+   ========================= */
+.contact-location,
+.opening-hours,
+.contact-quick .contact-quick-item,
+.footer-contact-info .contact-item {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #2a2a2a; /* dunkleres Anthrazit statt gleichfarbig */
+    line-height: 1.6;
+}
+
+/* Kontaktüberschriften */
+.contact-location h3,
+.opening-hours h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1d3557;
+}
+
+/* Footer Kontakttext */
+.footer-contact-info .contact-item a {
+    font-family: 'Inter', sans-serif;
+    color: #444444;
+    text-decoration: none;
+}
+
+/* Hoverfarbe für Footer-Kontaktlinks */
+.footer-contact-info .contact-item a:hover {
+    color: #2a6f97;
+}
+
+/* Quick Kontakt Icons + Labels */
+.contact-quick .contact-quick-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #1d3557;
+}
+
+/* Optional: Abstandserhöhung */
+.contact-location,
+.opening-hours {
+    margin-top: 25px;
+}
+
+/* =========================
+   Allgemeiner Lesefluss
+   ========================= */
+body, p, li, a {
+    font-family: 'Inter', sans-serif;
+    color: #2a2a2a;
+}
+
+/* Sicherstellen, dass Überschriften klar hervorstechen */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: #1d3557;
+}
