@@ -4484,8 +4484,8 @@ img {
 }
 
 .step-number {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background: var(--primary-green);
     color: var(--primary-white);
     border-radius: 50%;
@@ -4493,7 +4493,7 @@ img {
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     flex-shrink: 0;
     box-shadow: var(--shadow-soft);
     margin-right: 1.5rem;
@@ -4502,10 +4502,14 @@ img {
 .step-content {
     padding: 1.5rem;
     flex: 1;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .step h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
     color: var(--primary-green);
     font-family: 'Playfair Display', serif;
@@ -4514,7 +4518,7 @@ img {
 
 .step p {
     color: var(--text-light);
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     line-height: 1.6;
     margin: 0;
     text-align: left;
