@@ -423,6 +423,7 @@ a:focus {
     background: linear-gradient(135deg, rgba(139, 175, 139, 0.02), transparent);
     opacity: 0;
     transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .service-card:hover {
