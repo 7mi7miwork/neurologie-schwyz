@@ -4443,7 +4443,7 @@ img {
 
 .diagnostic-process h3 {
     color: var(--primary-green);
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
     text-align: center;
@@ -4451,34 +4451,34 @@ img {
 
 .process-steps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 3rem;
-    margin: 3rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 4rem;
+    margin: 4rem 0;
 }
 
 .step {
     text-align: center;
     position: relative;
-    padding: 2rem 1.5rem;
+    padding: 3rem 2rem;
     background: var(--primary-white);
-    border-radius: 12px;
+    border-radius: 16px;
     box-shadow: var(--shadow-soft);
     border: 1px solid rgba(139, 175, 139, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 200px;
+    min-height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 .step:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     box-shadow: var(--shadow-medium);
 }
 
 .step-number {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     background: var(--primary-green);
     color: var(--primary-white);
     border-radius: 50%;
@@ -4486,16 +4486,16 @@ img {
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 1.8rem;
-    margin: 0 auto 2rem;
-    box-shadow: var(--shadow-soft);
+    font-size: 2rem;
+    margin: 0 auto 2.5rem;
+    box-shadow: var(--shadow-medium);
     position: relative;
     z-index: 2;
 }
 
 .step h4 {
-    font-size: 1.3rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
     color: var(--primary-green);
     font-family: 'Playfair Display', serif;
     line-height: 1.3;
@@ -4503,10 +4503,11 @@ img {
 
 .step p {
     color: var(--text-light);
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.1rem;
+    line-height: 1.8;
     margin: 0;
     flex-grow: 1;
+    text-align: center;
 }
 
 /* Areas Grid */
