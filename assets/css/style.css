@@ -2432,19 +2432,18 @@ a:focus {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    display: block; /* Ensure no extra space */
 }
 
-/* Team Photo Styles */
 .team-photo {
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover; /* Changed from contain to cover */
     border-radius: 8px;
     display: block;
     margin: 0 auto;
-    max-width: 100%;
-    box-sizing: border-box;
-    line-height: 0;
+    padding: 0;
+    line-height: 0; /* Remove inline spacing */
 }
 
 .image-placeholder {
