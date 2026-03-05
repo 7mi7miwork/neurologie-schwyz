@@ -2432,6 +2432,20 @@ a:focus {
     overflow: hidden;
 }
 
+/* Team Photo Styles */
+.team-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.team-photo:hover {
+    transform: scale(1.05);
+}
+
 .image-placeholder {
     width: 100%;
     height: 100%;

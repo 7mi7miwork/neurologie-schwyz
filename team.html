@@ -74,6 +74,7 @@
                     <!-- Dr. med. Uta Kliesch -->
                     <article class="team-card">
                         <div class="team-card-image">
+                            <img src="" alt="Dr. med. Uta Kliesch" class="team-photo" data-name="uta-kliesch" style="display: none;">
                             <div class="image-placeholder doctor-placeholder">
                                 <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="200" height="250" fill="url(#gradient1)"/>
@@ -111,6 +112,7 @@
                     <!-- Dr. med. Elisabeth Huberle -->
                     <article class="team-card">
                         <div class="team-card-image">
+                            <img src="" alt="Dr. med. Elisabeth Huberle" class="team-photo" data-name="elisabeth-huberle" style="display: none;">
                             <div class="image-placeholder doctor-placeholder">
                                 <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="200" height="250" fill="url(#gradient2)"/>
@@ -148,6 +150,7 @@
                     <!-- Dr. med. Andrea Liechti -->
                     <article class="team-card">
                         <div class="team-card-image">
+                            <img src="" alt="Dr. med. Andrea Liechti-Wicki" class="team-photo" data-name="andrea-liechti-wicki" style="display: none;">
                             <div class="image-placeholder doctor-placeholder">
                                 <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="200" height="250" fill="url(#gradient3)"/>
@@ -185,6 +188,7 @@
                     <!-- Dr. med. Catharina Mica -->
                     <article class="team-card">
                         <div class="team-card-image">
+                            <img src="" alt="Dr. med. Catharina Mica-Keller" class="team-photo" data-name="catharina-mica-keller" style="display: none;">
                             <div class="image-placeholder doctor-placeholder">
                                 <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="200" height="250" fill="url(#gradient4)"/>
@@ -233,6 +237,7 @@
                     <!-- Martina Heinze -->
                     <article class="team-card">
                         <div class="team-card-image">
+                            <img src="" alt="Martina Heinze" class="team-photo" data-name="martina-heinze" style="display: none;">
                             <div class="image-placeholder support-placeholder">
                                 <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="200" height="250" fill="url(#gradient5)"/>
@@ -266,6 +271,7 @@
                     <!-- Rosanna Christen -->
                     <article class="team-card">
                         <div class="team-card-image">
+                            <img src="" alt="Rosanna Christen" class="team-photo" data-name="rosanna-christen" style="display: none;">
                             <div class="image-placeholder support-placeholder">
                                 <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="200" height="250" fill="url(#gradient6)"/>
@@ -299,6 +305,7 @@
                     <!-- Tanja Stöckli -->
                     <article class="team-card">
                         <div class="team-card-image">
+                            <img src="" alt="Tanja Stöckli" class="team-photo" data-name="tanja-stoeckli" style="display: none;">
                             <div class="image-placeholder support-placeholder">
                                 <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="200" height="250" fill="url(#gradient7)"/>
@@ -332,6 +339,7 @@
                     <!-- Tanja Schwegler -->
                     <article class="team-card">
                         <div class="team-card-image">
+                            <img src="" alt="Tanja Schwegler" class="team-photo" data-name="tanja-schwegler" style="display: none;">
                             <div class="image-placeholder support-placeholder">
                                 <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="200" height="250" fill="url(#gradient8)"/>
@@ -376,6 +384,7 @@
                     <!-- Zoje Mulaj -->
                     <article class="team-card">
                         <div class="team-card-image">
+                            <img src="" alt="Zoje Mulaj" class="team-photo" data-name="zoje-mulaj" style="display: none;">
                             <div class="image-placeholder cleaning-placeholder">
                                 <svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="200" height="250" fill="url(#gradient9)"/>
@@ -510,6 +519,49 @@
     </footer>
 
     <script>
+        // Function to automatically load team images with fallback support
+        function setTeamImage(img, name) {
+            const formats = ["webp", "jpg", "jpeg", "png"];
+            let index = 0;
+
+            function tryNext() {
+                if (index >= formats.length) {
+                    // If no image found, show placeholder
+                    img.style.display = 'none';
+                    const placeholder = img.nextElementSibling;
+                    if (placeholder && placeholder.classList.contains('image-placeholder')) {
+                        placeholder.style.display = 'block';
+                    }
+                    return;
+                }
+                
+                img.src = `images/team/${name}.${formats[index]}`;
+                img.onerror = () => {
+                    index++;
+                    tryNext();
+                };
+                img.onload = () => {
+                    img.style.display = 'block';
+                    const placeholder = img.nextElementSibling;
+                    if (placeholder && placeholder.classList.contains('image-placeholder')) {
+                        placeholder.style.display = 'none';
+                    }
+                };
+            }
+
+            tryNext();
+        }
+
+        // Initialize team images when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll(".team-photo").forEach(img => {
+                const name = img.dataset.name;
+                if (name) {
+                    setTeamImage(img, name);
+                }
+            });
+        });
+
         // Team member biographies data
         const biographies = {
             'uta-kliesch': {
