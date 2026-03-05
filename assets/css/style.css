@@ -2428,22 +2428,18 @@ a:focus {
 
 .team-card-image {
     position: relative;
-    height: 250px;
+    min-height: 534px;
     overflow: hidden;
 }
 
 /* Team Photo Styles */
 .team-photo {
     width: 100%;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-@media (max-width:768px){
-    .team-photo{
-        height: 200px;
-    }
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
 }
 
 .image-placeholder {
