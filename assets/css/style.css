@@ -2438,12 +2438,13 @@ a:focus {
 .team-photo {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Changed from contain to cover */
+    max-height: 400px; /* Smaller images */
+    object-fit: cover;
     border-radius: 8px;
     display: block;
     margin: 0 auto;
     padding: 0;
-    line-height: 0; /* Remove inline spacing */
+    line-height: 0;
 }
 
 .image-placeholder {
