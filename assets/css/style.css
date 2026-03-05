@@ -2428,11 +2428,11 @@ a:focus {
 
 .team-card-image {
     position: relative;
-    min-height: 534px;
+    min-height: auto; /* Allow to shrink to content size */
     overflow: hidden;
     margin: 0;
     padding: 0;
-    display: block; /* Ensure no extra space */
+    display: block;
 }
 
 .team-photo {
