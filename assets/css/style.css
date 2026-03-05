@@ -2435,15 +2435,15 @@ a:focus {
 /* Team Photo Styles */
 .team-photo {
     width: 100%;
-    height: 100%;
+    height: 260px;
     object-fit: cover;
-    object-position: center;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    border-radius: 10px;
 }
 
-.team-photo:hover {
-    transform: scale(1.05);
+@media (max-width:768px){
+    .team-photo{
+        height: 200px;
+    }
 }
 
 .image-placeholder {

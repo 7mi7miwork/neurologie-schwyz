@@ -519,47 +519,30 @@
     </footer>
 
     <script>
-        // Function to automatically load team images with fallback support
-        function setTeamImage(img, name) {
-            const formats = ["webp", "jpg", "jpeg", "png"];
+        document.addEventListener("DOMContentLoaded", () => {
+          const formats = ["webp","jpg","jpeg","png"];
+
+          document.querySelectorAll(".team-photo").forEach(img => {
+            const name = img.dataset.name;
             let index = 0;
 
-            function tryNext() {
-                if (index >= formats.length) {
-                    // If no image found, show placeholder
-                    img.style.display = 'none';
-                    const placeholder = img.nextElementSibling;
-                    if (placeholder && placeholder.classList.contains('image-placeholder')) {
-                        placeholder.style.display = 'block';
-                    }
-                    return;
-                }
-                
-                img.src = `images/team/${name}.${formats[index]}`;
-                img.onerror = () => {
-                    index++;
-                    tryNext();
-                };
-                img.onload = () => {
-                    img.style.display = 'block';
-                    const placeholder = img.nextElementSibling;
-                    if (placeholder && placeholder.classList.contains('image-placeholder')) {
-                        placeholder.style.display = 'none';
-                    }
-                };
+            function tryNextFormat() {
+              if(index >= formats.length){
+                img.style.display = "none";
+                return;
+              }
+
+              const src = `images/team/${name}.${formats[index]}`;
+              img.src = src;
+
+              img.onerror = () => {
+                index++;
+                tryNextFormat();
+              };
             }
 
-            tryNext();
-        }
-
-        // Initialize team images when DOM is loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll(".team-photo").forEach(img => {
-                const name = img.dataset.name;
-                if (name) {
-                    setTeamImage(img, name);
-                }
-            });
+            tryNextFormat();
+          });
         });
 
         // Team member biographies data
