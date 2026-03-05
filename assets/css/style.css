@@ -2430,6 +2430,8 @@ a:focus {
     position: relative;
     min-height: 534px;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /* Team Photo Styles */
@@ -2440,6 +2442,9 @@ a:focus {
     border-radius: 8px;
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    line-height: 0;
 }
 
 .image-placeholder {
