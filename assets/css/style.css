@@ -2411,13 +2411,12 @@ a:focus {
     background: white;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     border: 1px solid rgba(45, 80, 22, 0.1);
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 600px; /* Fixed height for consistency */
 }
 
 .team-card:hover {
@@ -2440,7 +2439,7 @@ a:focus {
 .team-photo {
     width: 100%;
     height: auto;
-    max-height: none; /* Remove height restriction */
+    max-height: none; /* No height restriction */
     object-fit: contain; /* Show full image without cropping */
     border-radius: 8px;
     display: block;
