@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog der Neurologie Zentralschweiz AG - Informative Artikel über neurologische Themen, Gesundheitstipps und Neuigkeiten aus unserer Praxis.">
+    <meta name="keywords" content="Neurologie Blog, Zentralschweiz, Gesundheit, neurologische Erkrankungen, Prävention, Therapie">
+    <meta name="author" content="Neurologie Zentralschweiz AG">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Blog | Neurologie Zentralschweiz AG">
+    <meta property="og:description" content="Informative Artikel über neurologische Themen und Neuigkeiten aus unserer Praxis">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neurologie-schwyz.ch/blog/">
+    <meta property="og:image" content="https://neurologie-schwyz.ch/assets/images/og-blog.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <title>Blog | Neurologie Zentralschweiz AG</title>
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Hauptnavigation">
+            <div class="nav-container">
+                <a href="../index.html" class="logo" aria-label="Neurologie Zentralschweiz AG Startseite">
+                    <h1>Neurologie Zentralschweiz AG</h1>
+                </a>
+                <button class="nav-toggle" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="nav-menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Startseite</a></li>
+                    <li><a href="../team.html" class="nav-link">Team</a></li>
+                    <li><a href="../blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="../diagnostik.html" class="nav-link">Diagnostik</a></li>
+                    <li><a href="../kontakt.html" class="nav-link">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- Page Header -->
+        <section class="page-header" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title" class="page-title">Unser Blog</h1>
+                <p class="page-subtitle">Informative Artikel über neurologische Gesundheit und Neuigkeiten aus unserer Praxis</p>
+            </div>
+        </section>
+
+        <!-- Blog Filter -->
+        <section class="blog-filter" aria-labelledby="filter-title">
+            <div class="container">
+                <h2 id="filter-title" class="visually-hidden">Blog filtern</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Alle Artikel</button>
+                    <button class="filter-btn" data-filter="diagnostik">Diagnostik</button>
+                    <button class="filter-btn" data-filter="therapie">Therapie</button>
+                    <button class="filter-btn" data-filter="praevention">Prävention</button>
+                    <button class="filter-btn" data-filter="neuigkeiten">Neuigkeiten</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="blog-section" aria-labelledby="blog-title">
+            <div class="container">
+                <h2 id="blog-title" class="visually-hidden">Blogartikel</h2>
+                <div class="blog-grid">
+                    <!-- Artikel 1 -->
+                    <article class="blog-card" data-category="diagnostik">
+                        <div class="blog-card-image">
+                            <img src="../assets/images/blog/migraine-diagnostics.jpg" alt="Migräne-Diagnostik" loading="lazy">
+                            <div class="blog-category">Diagnostik</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <time datetime="2024-01-15">15. Januar 2024</time>
+                                <span class="blog-author">Dr. med. Anna Weber</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="artikel/migraene-diagnostik.html">Moderne Migräne-Diagnostik: Neue Methoden und Möglichkeiten</a>
+                            </h3>
+                            <p class="blog-excerpt">Erfahren Sie mehr über die neuesten diagnostischen Verfahren bei Migräne und wie sie helfen können, die richtige Behandlung zu finden.</p>
+                            <a href="artikel/migraene-diagnostik.html" class="blog-read-more">Weiterlesen →</a>
+                        </div>
+                    </article>
+
+                    <!-- Artikel 2 -->
+                    <article class="blog-card" data-category="therapie">
+                        <div class="blog-card-image">
+                            <img src="../assets/images/blog/parkinson-therapy.jpg" alt="Parkinson-Therapie" loading="lazy">
+                            <div class="blog-category">Therapie</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <time datetime="2024-01-10">10. Januar 2024</time>
+                                <span class="blog-author">Dr. med. Markus Fischer</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="artikel/parkinson-therapie.html">Innovative Therapieansätze bei Parkinson-Erkrankung</a>
+                            </h3>
+                            <p class="blog-excerpt">Entdecken Sie die fortschrittlichen Behandlungsmethoden, die die Lebensqualität von Parkinson-Patienten verbessern können.</p>
+                            <a href="artikel/parkinson-therapie.html" class="blog-read-more">Weiterlesen →</a>
+                        </div>
+                    </article>
+
+                    <!-- Artikel 3 -->
+                    <article class="blog-card" data-category="praevention">
+                        <div class="blog-card-image">
+                            <img src="../assets/images/blog/stroke-prevention.jpg" alt="Schlaganfall-Prävention" loading="lazy">
+                            <div class="blog-category">Prävention</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <time datetime="2024-01-05">5. Januar 2024</time>
+                                <span class="blog-author">Dr. med. Sarah Keller</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="artikel/schlaganfall-praevention.html">Schlaganfall-Prävention: Was Sie aktiv tun können</a>
+                            </h3>
+                            <p class="blog-excerpt">Wichtige Tipps und Strategien zur Vorbeugung von Schlaganfällen - die häufigste neurologische Notfallsituation.</p>
+                            <a href="artikel/schlaganfall-praevention.html" class="blog-read-more">Weiterlesen →</a>
+                        </div>
+                    </article>
+
+                    <!-- Artikel 4 -->
+                    <article class="blog-card" data-category="neuigkeiten">
+                        <div class="blog-card-image">
+                            <img src="../assets/images/blog/praxis-news.jpg" alt="Praxisneuigkeiten" loading="lazy">
+                            <div class="blog-category">Neuigkeiten</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <time datetime="2023-12-20">20. Dezember 2023</time>
+                                <span class="blog-author">Praxis Team</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="artikel/neue-geraete.html">Neue Geräte in unserer Praxis: Modernste Diagnostik für Sie</a>
+                            </h3>
+                            <p class="blog-excerpt">Wir präsentieren unsere neuen hochmodernen Diagnosegeräte und erklären, wie sie Ihre Untersuchung verbessern.</p>
+                            <a href="artikel/neue-geraete.html" class="blog-read-more">Weiterlesen →</a>
+                        </div>
+                    </article>
+
+                    <!-- Artikel 5 -->
+                    <article class="blog-card" data-category="therapie">
+                        <div class="blog-card-image">
+                            <img src="../assets/images/blog/epilepsy-treatment.jpg" alt="Epilepsie-Behandlung" loading="lazy">
+                            <div class="blog-category">Therapie</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <time datetime="2023-12-15">15. Dezember 2023</time>
+                                <span class="blog-author">Dr. med. Anna Weber</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="artikel/epilepsie-behandlung.html">Leben mit Epilepsie: Behandlungsoptionen und Lebensqualität</a>
+                            </h3>
+                            <p class="blog-excerpt">Umfassender Überblick über moderne Behandlungsmethoden bei Epilepsie und Tipps für den Alltag.</p>
+                            <a href="artikel/epilepsie-behandlung.html" class="blog-read-more">Weiterlesen →</a>
+                        </div>
+                    </article>
+
+                    <!-- Artikel 6 -->
+                    <article class="blog-card" data-category="diagnostik">
+                        <div class="blog-card-image">
+                            <img src="../assets/images/blog/eeg-examination.jpg" alt="EEG-Untersuchung" loading="lazy">
+                            <div class="blog-category">Diagnostik</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <time datetime="2023-12-10">10. Dezember 2023</time>
+                                <span class="blog-author">Dr. med. Markus Fischer</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="artikel/eeg-untersuchung.html">EEG-Untersuchung: Was erwartet Sie als Patient?</a>
+                            </h3>
+                            <p class="blog-excerpt">Detaillierte Erläuterung des Ablaufs einer EEG-Untersuchung und was die Ergebnisse bedeuten.</p>
+                            <a href="artikel/eeg-untersuchung.html" class="blog-read-more">Weiterlesen →</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="blog-load-more">
+                    <button class="btn btn-secondary" id="load-more-btn">Weitere Artikel laden</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="blog-newsletter" aria-labelledby="newsletter-title">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 id="newsletter-title" class="section-title">Bleiben Sie informiert</h2>
+                    <p class="newsletter-subtitle">Erhalten Sie monatlich interessante Artikel und Neuigkeiten aus der Neurologie direkt in Ihr Postfach.</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Anmelden</button>
+                        </div>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkbox-text">Ich stimme der Datenschutzerklärung zu und bin einverstanden, informative E-Mails zu erhalten.</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>        <section class="contact-quick" aria-labelledby="contact-quick-title">
+            <div class="container">
+                <h2 id="contact-quick-title" class="section-title">Kontaktinformationen</h2>
+                <div class="contact-quick-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact-content">
+                            <h3>Standort Zug</h3>
+                            <p><a href="tel:+41417103294">041 710 32 94</a></p>
+                            <p><a href="mailto:praxiskliesch.zug@hin.ch">praxiskliesch.zug@hin.ch</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact-content">
+                            <h3>Standort Schwyz</h3>
+                            <p><a href="tel:+41418130080">041 813 00 80</a></p>
+                            <p><a href="mailto:praxis.kliesch@hin.ch">praxis.kliesch@hin.ch</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                        </div>
+                        <div class="contact-content">
+                            <h3>Öffnungszeiten</h3>
+                            <p>Mo–Do: 08:00–12:00 | 13:30–17:00</p>
+                            <p>Fr: 08:00–12:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Neurologie Zentralschweiz AG</h3>
+                    <p class="footer-description">Fachärztliche Praxis für Neurologie - Ihre Gesundheit ist unser Anliegen.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../index.html">Startseite</a></li>
+                        <li><a href="../team.html">Team</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../diagnostik.html">Diagnostik</a></li>
+                        <li><a href="../kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="../impressum.html">Impressum</a></li>
+                        <li><a href="../datenschutz.html">Datenschutz</a></li>
+                        <li><a href="../agb.html">AGB</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Neurologie Zentralschweiz AG. Alle Rechte vorbehalten.</p>
+                    <div class="footer-legal">
+                        <a href="#">Barrierefreiheit</a>
+                        <span class="separator">|</span>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+                <p class="footer-credits">Website erstellt mit ❤️ in Zentralschweiz</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        // Blog filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const blogCards = document.querySelectorAll('.blog-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    blogCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // Load more functionality (placeholder)
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    // Placeholder for loading more articles
+                    this.textContent = 'Keine weiteren Artikel verfügbar';
+                    this.disabled = true;
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
